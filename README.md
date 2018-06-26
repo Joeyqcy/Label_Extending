@@ -13,7 +13,7 @@ Some works to promote the accuracy of name-entity-recognizing.
 
 `kol_recommend_raw_rep.csv` : A corpus which contains about 1700 contents.
 
-ps: A large corpus which contains about 300000 contents lies in database.(database:kol_recommend, table:baidu_zhidao)
+ps: A large corpus which contains about 300000 contents lies in database.(database: kol_recommend, table: baidu_zhidao)
 
 `labeled_dict.txt` : Some entities with known label.Used for seed set in MADDL
 
