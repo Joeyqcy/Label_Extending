@@ -1,6 +1,5 @@
 # Label_Extending
-Some works to promote the accuracy of name-entity-recognizing.
-
+This project is to extend labels for name entities without certain label from corpus.The result can be used for supervised learning later.
 # src
 
 `Label_Extending.py`: Extract graph structure from specified corpus. Then use a ssl algorithm named 'MADDL' to extend the labels for leraning set.
