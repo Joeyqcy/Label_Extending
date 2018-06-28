@@ -1,5 +1,6 @@
 # Label_Extending
-This project is to extend labels for name entities without certain label from corpus.The result can be used for supervised learning later.
+This project is to extend labels for name entities without certain label from corpus.The result can be used for supervised learning later. 
+
 # src
 
 `Label_Extending.py`: Extract graph structure from specified corpus. Then use a ssl algorithm named 'MADDL' to extend the labels for leraning set.
@@ -22,16 +23,27 @@ ps: A large corpus which contains about 300000 contents lies in database.(databa
 
 `newwords_dict.txt` : ltp segmentor user dict.(find from wx docs, used now.)
 
-# Example
+# Settings
 
-Set the variables on path first, and then type in shell:
-`python Label_Extending.py`
+Set the variables in `Label_Extending.py` first (between line 18 and line 45). Major settings are as follow:
 
-You will get several files as output.
+`INPUT_CSV_PATH` is the path of corpus,currently only supported '*.csv'. (line 25)
+
+`CONTENT` is the column name of corpus which will be processed. (line 43)
+
+Other variables can use default.
+
+# Run
+
+Type in shell: `python Label_Extending.py`
+
+# Output
+
+You will get several files after running the program.
 
 `Potential_list.json` : A list of possible entities without known label which shoud be judged.  
 
-`Filter_list.json` : A list of entities to filter the graph structure.(get from that  Potential_list combines labeled_list)
+`Filter_list.json` : A list of entities to filter the graph structure.(get from that Potential_list combines labeled_list)
 
 `targetDict.json` : A dictionary about graph structure.
 
